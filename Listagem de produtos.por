@@ -21,22 +21,20 @@ programa {
       escolha(choice) {
         caso 1:
 
-        escreva("escolha sua categoria:\n")
-        escreva("1) Criativos\n")
-        escreva("2) Papeis\n")
-        escreva("3) Objetos de corte\n")
-        escreva("4) Itens para impressoras\n")
-        escreva("5) Outros\n")
-        leia(choice)
-        limpa()
-        para(inteiro j = 0;j< 5; j++){
-          escreva(j +1,") ", itensLista[choice-1][j],"\n")
-          escreva("id:", itensIdentidade[choice-1][j],"\n")
-        }
-        escreva("\nPrecione qualquer numero para voltar\n")
-        leia(choice)
-        limpa()
-
+          escreva("escolha sua categoria:\n")
+          escreva("1) Criativos\n")
+          escreva("2) Papeis\n")
+          escreva("3) Objetos de corte\n")
+          escreva("4) Itens para impressoras\n")
+          escreva("5) Outros\n")
+          leia(choice)
+          limpa()
+          para(inteiro j = 0;j< 5; j++){
+            escreva(j +1,") ", itensLista[choice-1][j],"\n")
+            escreva("id:", itensIdentidade[choice-1][j],"\n")
+          }escreva("\nPrecione qualquer numero para voltar\n")
+          leia(choice)
+          limpa()
         pare
         caso 2:
           pesquisaEncontrado = falso
@@ -63,6 +61,5 @@ programa {
         pare
       }
     }enquanto(loop == verdadeiro)
-
   }
 }
